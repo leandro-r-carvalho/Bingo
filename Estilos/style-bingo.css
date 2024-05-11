@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    margin-top: 20px;
+    margin-left: 5px;
+    height: 600px;
+    width: 950px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bingo-principal {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    border: 1px solid #000;
+    margin-right: 10px;
+}
+
+.cartelas {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    border: 1px solid #000;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+/*Configurações dentro da .bingo-principal */
+.todosNumeros {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    width: 400px;
+    height: 450px;
+    border: 5px double #000;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+#sorteado, #naoSorteado {  
+    background-color: darkblue;
+}
+
+.numBingo {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+#naoSorteado {
+    background-color: #2AB0E0;
+}
+
+.numeroSorteado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.num {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.msg {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.msg p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.msg-sorteados {
+    margin-left: 5px;
+    font-size: 18px;
+}
+/*Configurações dentro da .bingo-principal */
+
+/*Configurações dentro da .cartelas */
+.nomePlayers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    width: 300px;
+    height: 70px;
+}
+
+.nomePlayers p {
+    width: 120px;
+}
+
+.nomePlayers input {
+    height: 25px;
+}
+
+.btnComecar, .btnSortear {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    background-color:darkblue;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color:grey;
+    color: darkblue;
+    transform: scale(1.1);
+}
+
+.cartelaPlayers {
+    margin: auto;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 320px;
+}
+
+.nomeP1, .nomeP2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    background-color: darkblue;
+    color: #fff;
+}
+
+.numP1, .numP2 {
+    cursor: pointer;
+    background-color: darkblue;
+    color: #fff;
+}
+
+.cartelaP1, .cartelaP2 {
+    margin: auto;
+    margin-top: 5px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    width: 250px;
+    height: 120px;
+}
+
+.cartelaP1 .numP1, .cartelaP2 .numP2 {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.playerVencedor {
+    display: flex;
+    justify-content:space-around;
+    width: 400px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.player {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: red;
+}
